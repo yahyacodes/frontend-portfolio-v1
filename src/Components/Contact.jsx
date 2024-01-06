@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import Fade from "react-reveal/Fade";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bajgw0k",
+        "template_8r2argf",
+        form.current,
+        "uJuuIF8rEF6epKy4F"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div id="contact">
       <main className="relative py-28 mt-20">
@@ -29,11 +53,12 @@ const Contact = () => {
               </p>
             </div>
             <div className="mt-12 mx-auto px-4 p-8 bg-color text-gray-100 sm:max-w-lg sm:px-8 rounded-xl">
-              <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+              <form ref={form} onSubmit={sendEmail} className="space-y-5">
                 <div>
                   <label className="font-medium">Full name</label>
                   <input
                     type="text"
+                    name="user_name"
                     required
                     className="w-full mt-2 px-3 py-2 bg-transparent outline-none ring-1 ring-gray-100/10 focus:ring-gray-100/10 shadow-sm rounded-lg"
                   />
@@ -42,6 +67,7 @@ const Contact = () => {
                   <label className="font-medium">Email</label>
                   <input
                     type="email"
+                    name="user_email"
                     required
                     className="w-full mt-2 px-3 py-2 bg-transparent outline-none ring-1 ring-gray-100/10 focus:ring-gray-100/10 shadow-sm rounded-lg"
                   />
@@ -50,6 +76,7 @@ const Contact = () => {
                   <label className="font-medium">Message</label>
                   <textarea
                     required
+                    name="message"
                     className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none ring-1 ring-gray-100/10 focus:ring-gray-100/10 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
