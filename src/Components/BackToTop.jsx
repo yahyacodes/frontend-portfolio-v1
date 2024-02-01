@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BsArrowUpShort } from "react-icons/bs";
+import { AiOutlineUp } from "react-icons/ai";
 import "../App.css";
 
 const BackToTop = () => {
@@ -26,7 +26,7 @@ const BackToTop = () => {
     <>
       <div>
         {backToTop && (
-          <BsArrowUpShort className="button-top" onClick={handleScroll} />
+          <AiOutlineUp className="button-top" onClick={handleScroll} />
         )}
       </div>
     </>

@@ -12,7 +12,7 @@ import Fade from "react-reveal/Fade";
 
 const Logos = () => {
   return (
-    <div className="py-14 xl:mb-10">
+    <div className="3xl:py-14 md:py-0 xl:py-12">
       <Fade top distance="50%">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8 image-gradient">
           <Marquee direction="left" speed={100} delay={5}>
@@ -35,12 +35,12 @@ const Logos = () => {
 
                 {/* LOGO 4 */}
                 <li className="flex-none">
-                  <img src={tailwindLogo} alt="" className="w-44" />
+                  <img src={tailwindLogo} alt="" className="w-48" />
                 </li>
 
                 {/* LOGO 5 */}
                 <li className="flex-none">
-                  <img src={bootstrapLogo} alt="" className="w-44" />
+                  <img src={bootstrapLogo} alt="" className="w-48" />
                 </li>
 
                 {/* LOGO 6 */}

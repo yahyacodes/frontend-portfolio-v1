@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import resumePdf from "../assets/yahyacodes.resume.pdf";
-import Logo from "../assets/Yahya Dahir-01.svg";
+import Logo from "../assets/Yahya YD-01.svg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
               className="-m-1.5 p-1.5"
             >
               <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto fill-gray-100" src={Logo} alt="" />
+              <img className="h-14 w-auto fill-gray-100" src={Logo} alt="" />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -94,7 +94,11 @@ const Navbar = () => {
               <div className="flex lg:flex-1">
                 <a href="#hero" className="-m-1.5 p-1.5" onClick={handleClose}>
                   <span className="sr-only">Your Company</span>
-                  <img className="h-8 w-auto fill-gray-100" src={Logo} alt="" />
+                  <img
+                    className="h-14 w-auto fill-gray-100"
+                    src={Logo}
+                    alt=""
+                  />
                 </a>
               </div>
               <button
