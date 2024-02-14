@@ -12,7 +12,7 @@ import Fade from "react-reveal/Fade";
 
 const Logos = () => {
   return (
-    <div className="3xl:py-14 md:py-0 xl:py-12">
+    <div className="xl:py-0">
       <Fade top distance="50%">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8 image-gradient">
           <Marquee direction="left" speed={100} delay={5}>

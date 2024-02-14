@@ -7,7 +7,7 @@ const About = () => {
     <div id="about">
       <Fade top distance="50%">
         <div className="relative isolate px-6 pt-14 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 2xl:py-56 lg:py-20 text-gray-100">
+          <div className="mx-auto max-w-2xl sm:py-48 2xl:py-56 lg:py-20 text-gray-100">
             <div className="">
               <h1 className="text-xl font-bold tracking-tight sm:text-3xl">
                 About me
