@@ -50,7 +50,7 @@ const Contact = () => {
               innovative and user-centric web experiences together!
             </p>
           </div>
-          <div className="mt-12 mx-auto px-4 p-8 bg-color text-gray-100 sm:max-w-lg sm:px-8 rounded-xl">
+          <div className="mt-12 mx-auto px-4 p-8 bg-color ring-1 ring-gray-100/10 text-gray-100 sm:max-w-lg sm:px-8 rounded-xl">
             <form ref={form} onSubmit={sendEmail} className="space-y-5">
               <div>
                 <label className="font-medium">Full name</label>

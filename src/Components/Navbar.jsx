@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import resumePdf from "../assets/yahyacodes.resume.pdf";
+import resumePdf from "../assets/Yahya-dahir-resume.pdf";
 import Logo from "../assets/Yahya YD-01.svg";
 import { Link } from "react-scroll";
 
