@@ -46,14 +46,11 @@ const Hero = () => {
                 <BsGithub className="text-2xl" />
               </a>
 
-              <a
-                href="https://www.linkedin.com/in/yahya-burhan/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/yahyadahir/" target="_blank">
                 <BsLinkedin className="text-2xl" />
               </a>
 
-              <a href="https://twitter.com/Yahya_Burhan22" target="_blank">
+              <a href="https://twitter.com/yahya__dahir" target="_blank">
                 <BsTwitterX className="text-2xl" />
               </a>
             </div>
