@@ -36,10 +36,9 @@ const Hero = () => {
               Frontend Developer
             </h1>
             <p className="mt-6 text-gray-300 text-md leading-8">
-              As a software engineering student, I leverage frontend expertise
-              to craft dynamic and user-friendly experiences, contributing to
-              innovative projects with a focus on creating impactful web
-              applications.
+              As a software engineer, I leverage frontend expertise to craft
+              dynamic and user-friendly experiences, contributing to innovative
+              projects with a focus on creating impactful web applications.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="https://github.com/yahyacodes" target="_blank">
