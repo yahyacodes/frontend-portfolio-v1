@@ -11,6 +11,8 @@ import BackToTop from "./Components/BackToTop";
 function App() {
   return (
     <>
+      {/* This is version one of my portfolio */}
+      {/* Changes are to be made soon */}
       <div className="relative bg-color">
         <div className="relative">
           <Hero />
